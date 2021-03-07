@@ -62,7 +62,7 @@ public class ScrapingUtil {
 			LOGGER.info("Título da página: {}",title);	
 			
 			StatusPartida statusPartida = obtemStatusPartida(document);
-			partida.setStatusPartida(statusPartida.toString());
+			partida.setStatusPartida(statusPartida);
 			LOGGER.info("Status partida: {}",statusPartida);
 			
 			if(statusPartida != StatusPartida.PARTIDA_NAO_INICIADA) {
@@ -78,10 +78,10 @@ public class ScrapingUtil {
 				LOGGER.info("Placar Equipe Visitante: {}",placarEquipeVisitante);
 				
 				Integer placarEstendidoEquipeCasa = recuperaPenalidades(document, CASA);
-				partida.setPlacarEstendidoEquipeCasa(placarEstendidoEquipeCasa.toString());
+				partida.setPlacarEstendidoEquipeCasa(placarEstendidoEquipeCasa);
 				LOGGER.info("Placar Estendido Equipe Casa: {}",placarEstendidoEquipeCasa);
 				Integer placarEstendidoEquipeVisitante = recuperaPenalidades(document, VISITANTE);
-				partida.setPlacarEstendidoEquipeCasa(placarEstendidoEquipeVisitante.toString());
+				partida.setPlacarEstendidoEquipeCasa(placarEstendidoEquipeVisitante);
 				LOGGER.info("Placar Estendido Equipe Visitante: {}",placarEstendidoEquipeVisitante);
 			}
 			

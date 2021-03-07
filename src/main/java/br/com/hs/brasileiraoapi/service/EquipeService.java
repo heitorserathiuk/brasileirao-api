@@ -44,7 +44,7 @@ public class EquipeService {
 
 	public Equipe inserirEquipe(@Valid EquipeDTO dto) {
 		boolean exists = equipeRepository.existsByNomeEquipe(dto.getNomeEquipe());
-		if(!exists) {
+		if(exists) {
 			throw new BadRequestException("Já existe uma equipe cadastrada com o nome informado");
 		}
 		Equipe equipe = modelMapper.map(dto, Equipe.class);		
