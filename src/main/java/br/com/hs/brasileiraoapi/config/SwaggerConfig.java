@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 	
-	private static final String BASE_PACKAGE = "br.com.h2.brasileiraoapi.controller";
+	private static final String BASE_PACKAGE = "br.com.hs.brasileiraoapi.controller";
 	private static final String API_TITULO = "Brasileirão API - Scraping";
 	private static final String API_DESCRICAO = "API Rest que obtém dados de partidas do Brasileirão em tempo real";
 	private static final String API_VERSAO = "1.0.0";
