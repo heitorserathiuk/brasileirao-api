@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.util;
+package br.com.hs.brasileiraoapi.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import br.com.phc.brasileiraoapi.dto.PartidaGoogleDTO;
+import br.com.hs.brasileiraoapi.dto.PartidaGoogleDTO;
 
 @Service
 public class ScrapingUtil {

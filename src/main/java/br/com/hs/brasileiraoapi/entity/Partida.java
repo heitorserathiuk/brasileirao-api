@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.entity;
+package br.com.hs.brasileiraoapi.entity;
 
 import java.io.Serializable;
 import java.util.Date;

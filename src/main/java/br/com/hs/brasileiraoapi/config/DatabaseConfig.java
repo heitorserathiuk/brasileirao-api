@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.config;
+package br.com.hs.brasileiraoapi.config;
 
 import javax.sql.DataSource;
 

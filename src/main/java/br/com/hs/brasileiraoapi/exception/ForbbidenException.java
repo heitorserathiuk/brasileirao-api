@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.exception;
+package br.com.hs.brasileiraoapi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

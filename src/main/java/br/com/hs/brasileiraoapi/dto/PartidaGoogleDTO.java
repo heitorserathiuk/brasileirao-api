@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.dto;
+package br.com.hs.brasileiraoapi.dto;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.exception;
+package br.com.hs.brasileiraoapi.exception;
 
 import javax.servlet.http.HttpServletRequest;
 
