@@ -1,4 +1,4 @@
-package br.com.phc.brasileiraoapi.util;
+package br.com.hs.brasileiraoapi.util;
 
 public enum StatusPartida {
 
