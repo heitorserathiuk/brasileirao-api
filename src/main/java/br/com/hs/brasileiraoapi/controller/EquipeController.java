@@ -46,7 +46,7 @@ public class EquipeController {
 	})
 	@GetMapping("/{id}")
 	public ResponseEntity<Equipe> buscarEquipeId(@PathVariable("id") Long id){
-		return ResponseEntity.ok().body(equipeService.buscarEquipeId(id));
+		return ResponseEntity.ok().body(equipeService.buscarEquipePorId(id));
 	}
 	
 	@ApiOperation(value = "Listar equipes")

@@ -1,6 +1,7 @@
 package br.com.hs.brasileiraoapi.dto;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,13 +23,13 @@ public class PartidaGoogleDTO implements Serializable{
 	private String urlLogoEquipeCasa;
 	private Integer placarEquipeCasa;
 	private String golsEquipeCasa;
-	private String placarEstendidoEquipeCasa;
+	private Integer placarEstendidoEquipeCasa;
 	
 	private String nomeEquipeVisitante;
 	private String urlLogoEquipeVisitante;
 	private Integer placarEquipeVisitante;
 	private String golsEquipeVisitante;
-	private String placarEstendidoEquipeVisitante;
+	private Integer placarEstendidoEquipeVisitante;
 
 	
 }

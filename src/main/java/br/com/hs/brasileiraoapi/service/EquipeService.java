@@ -26,7 +26,7 @@ public class EquipeService {
 	@Autowired
 	private ModelMapper modelMapper;
 
-	public Equipe buscarEquipeId(Long id) {
+	public Equipe buscarEquipePorId(Long id) {
 		return equipeRepository.findById(id)
 				.orElseThrow(() -> new NotFoundException("Nenhuma equipe encontrada com o id informado: "+id));
 	}
@@ -44,7 +44,7 @@ public class EquipeService {
 
 	public Equipe inserirEquipe(@Valid EquipeDTO dto) {
 		boolean exists = equipeRepository.existsByNomeEquipe(dto.getNomeEquipe());
-		if(exists) {
+		if(!exists) {
 			throw new BadRequestException("Já existe uma equipe cadastrada com o nome informado");
 		}
 		Equipe equipe = modelMapper.map(dto, Equipe.class);		
@@ -53,7 +53,7 @@ public class EquipeService {
 
 	public void alterarEquipe(Long id, @Valid EquipeDTO dto) {
 		boolean exists = equipeRepository.existsById(id);
-		if(exists) {
+		if(!exists) {
 			throw new BadRequestException("Não foi possível alterar a equipe: ID inexistente");
 		}
 		Equipe equipe = modelMapper.map(dto, Equipe.class);		
